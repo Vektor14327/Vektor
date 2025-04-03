@@ -14,11 +14,11 @@ app.use(express.json());
 require('./config/db')();
 
 // Middleware
+app.use(cors({
+    origin: "https://vektor-kd8t.onrender.com",
+    credentials: true
+}));
 app.use(cookieParser());
-//app.use(cors({
-//    origin: "https://vektor-kd8t.onrender.com",
-//    credentials: true
-//}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((err, req, res, next) => {

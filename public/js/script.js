@@ -5,8 +5,7 @@ class VektorApp {
         this.initDOM();
         this.initEventListeners();
         this.checkAuthStatus();
-        // this.apiBaseUrl = 'https://f602-135-181-12-180.ngrok-free.app/api';   //replace with your frontend URL
-        this.apiBaseUrl = 'https://vektor-kd8t.onrender.com/api';   //replace with your frontend URL
+        this.apiBaseUrl = 'https://vektor-kd8t.onrender.com/api';   
         this.freeLimitReached = false;
     }
 
