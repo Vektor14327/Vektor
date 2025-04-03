@@ -16,7 +16,7 @@ require('./config/db')();
 // Middleware
 app.use(cookieParser());
 app.use(cors({
-    origin: process.env.FRONTEND_URL,
+    origin: "https://vektor-kd8t.onrender.com",
     credentials: true
 }));
 app.use(express.static(path.join(__dirname, 'public')));
