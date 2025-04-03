@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
-const cors = require('cors');
+//const cors = require('cors');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const errorHandler = require('./middlewares/error');
@@ -15,10 +15,10 @@ require('./config/db')();
 
 // Middleware
 app.use(cookieParser());
-app.use(cors({
-    origin: "https://vektor-kd8t.onrender.com",
-    credentials: true
-}));
+//app.use(cors({
+//    origin: "https://vektor-kd8t.onrender.com",
+//    credentials: true
+//}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use((err, req, res, next) => {
