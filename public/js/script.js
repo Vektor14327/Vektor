@@ -5,7 +5,7 @@ class VektorApp {
         this.initDOM();
         this.initEventListeners();
         this.checkAuthStatus();
-        this.apiBaseUrl = 'https://vektor-kd8t.onrender.com/api';   
+        this.apiBaseUrl = "https://vektor-kd8t.onrender.com/api";   
         this.freeLimitReached = false;
     }
 
